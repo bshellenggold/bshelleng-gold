@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <title>BShelleng Gold | Gold Dealer in Awka, Anambra</title>
+  <meta name="description" content="BShelleng Gold is a gold dealer in Awka, Anambra State, specializing in buying and selling gold, gold jewelry, watches and wedding rings. Visit us at Eke Awka Market." />
+  <meta name="keywords" content="gold dealer in Awka, gold buyer in Awka, buy gold Awka, sell gold Awka, gold jewelry Awka, wedding rings Awka, BShelleng Gold" />
+  <meta property="og:title" content="BShelleng Gold | Gold Dealer in Awka" />
+  <meta property="og:description" content="Gold buying, gold selling and quality jewelry in Awka, Anambra." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --gold:#d4af37;
+      --gold2:#f3d77a;
+      --black:#0b0b0b;
+      --dark:#141414;
+      --cream:#faf7ef;
+      --white:#ffffff;
+      --muted:#b8b8b8;
+      --line:rgba(255,255,255,.12);
+      --shadow:0 20px 60px rgba(0,0,0,.18);
+      --radius:22px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:#171717;background:var(--cream);line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(1120px,92%);margin:auto}
+    .topbar{background:#050505;color:#fff;font-size:13px;padding:8px 0}
+    .topbar .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    header{
+      position:sticky;top:0;z-index:50;background:rgba(11,11,11,.96);
+      border-bottom:1px solid var(--line);backdrop-filter:blur(12px);color:#fff;
+    }
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+    .brand-mark{
+      width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;
+      display:grid;place-items:center;color:var(--gold);font-weight:900;
+    }
+    .brand small{display:block;color:var(--gold);font-size:10px;letter-spacing:2px;text-transform:uppercase}
+    nav ul{display:flex;list-style:none;gap:26px;font-size:14px}
+    nav a{color:#ddd} nav a:hover{color:var(--gold)}
+    .menu{display:none;background:none;border:0;color:#fff;font-size:28px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:9px;
+      padding:13px 20px;border-radius:999px;font-weight:800;font-size:14px;
+      transition:.2s;border:1px solid transparent;
+    }
+    .btn-gold{background:var(--gold);color:#111}
+    .btn-gold:hover{transform:translateY(-2px);background:var(--gold2)}
+    .btn-outline{border-color:rgba(255,255,255,.35);color:#fff}
+    .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+    .hero{
+      min-height:720px;display:grid;place-items:center;position:relative;overflow:hidden;
+      background:
+        radial-gradient(circle at 80% 20%,rgba(212,175,55,.24),transparent 30%),
+        radial-gradient(circle at 15% 80%,rgba(212,175,55,.12),transparent 35%),
+        linear-gradient(135deg,#070707,#181818 55%,#090909);
+      color:#fff;
+    }
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.18));pointer-events:none}
+    .hero-content{position:relative;z-index:2;padding:90px 0;max-width:760px}
+    .eyebrow{color:var(--gold2);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:12px;margin-bottom:18px}
+    h1{font-size:clamp(42px,7vw,78px);line-height:1.02;letter-spacing:-2px;margin-bottom:24px}
+    .hero p{font-size:19px;color:#ddd;max-width:650px;margin-bottom:32px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+    .trust-row{display:flex;gap:28px;flex-wrap:wrap;margin-top:45px;color:#ddd;font-size:13px}
+    .trust-row strong{color:#fff;display:block;font-size:15px}
+    section{padding:90px 0}
+    .section-head{max-width:700px;margin-bottom:42px}
+    .kicker{color:#9a7a17;font-weight:900;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+    h2{font-size:clamp(32px,4vw,50px);line-height:1.1;margin:10px 0 15px;letter-spacing:-1px}
+    .section-head p{color:#666}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:28px;box-shadow:0 8px 30px rgba(0,0,0,.05)}
+    .icon{width:52px;height:52px;border-radius:15px;background:#f5e9bd;color:#80620d;display:grid;place-items:center;font-size:24px;margin-bottom:20px}
+    .card h3{font-size:20px;margin-bottom:8px}.card p{color:#666;font-size:15px}
+    .dark-section{background:var(--black);color:#fff}
+    .dark-section .section-head p{color:#aaa}
+    .dark-section .card{background:#151515;border-color:#292929}.dark-section .card p{color:#aaa}.dark-section .card h3{color:#fff}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .about-box{background:#111;color:#fff;border-radius:28px;min-height:430px;padding:38px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}
+    .about-box:before{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(212,175,55,.35);border-radius:50%;right:-80px;top:-80px}
+    .about-box .big{font-size:70px;font-weight:900;color:var(--gold);line-height:1}
+    .about-copy p{color:#666;margin:0 0 18px}
+    .checks{list-style:none;margin:25px 0}.checks li{margin:12px 0}.checks li:before{content:"✓";color:#9a7a17;font-weight:900;margin-right:10px}
+    .products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .product{background:#fff;border-radius:20px;padding:18px;border:1px solid #eee}
+    .product .photo{height:180px;border-radius:15px;background:linear-gradient(135deg,#f5e9bd,#fff,#d8b94c);display:grid;place-items:center;font-size:58px;margin-bottom:16px}
+    .product h3{font-size:17px}.product p{color:#777;font-size:13px}
+    .cta{background:linear-gradient(135deg,#111,#242019);color:#fff;border-radius:30px;padding:55px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .cta p{color:#bbb;max-width:650px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .contact-card{background:#fff;border:1px solid #eee;border-radius:22px;padding:30px}
+    .contact-card a{color:#80620d;font-weight:800}
+    .map-note{margin-top:20px;padding:18px;background:#f2ead0;border-radius:16px;color:#5e4b12}
+    footer{background:#050505;color:#aaa;padding:35px 0}
+    footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    footer strong{color:#fff}
+    .float-wa{position:fixed;right:20px;bottom:20px;z-index:60;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:28px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .note{font-size:12px;color:#888;margin-top:10px}
+    @media(max-width:850px){
+      nav ul{display:none;position:absolute;top:76px;left:0;right:0;background:#0b0b0b;padding:20px;flex-direction:column;gap:16px;border-top:1px solid var(--line)}
+      nav ul.open{display:flex}.menu{display:block}
+      .nav .btn{display:none}
+      .grid,.products{grid-template-columns:1fr 1fr}
+      .about,.contact{grid-template-columns:1fr}
+      .hero{min-height:650px}.cta{flex-direction:column;align-items:flex-start}
+    }
+    @media(max-width:540px){
+      section{padding:65px 0}.grid,.products{grid-template-columns:1fr}
+      h1{letter-spacing:-1px}.hero p{font-size:17px}
+      .trust-row{gap:18px}.cta{padding:35px 25px}.about-box{min-height:330px}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"JewelryStore",
+    "name":"BShelleng Gold",
+    "description":"Gold dealer in Awka, Anambra State, specializing in buying and selling gold and quality gold jewelry.",
+    "telephone":"+2348037899770",
+    "url":"https://usmanbshelleng.business.site/",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"133 Zik Avenue, Eke Awka Market",
+      "addressLocality":"Awka",
+      "addressRegion":"Anambra",
+      "addressCountry":"NG"
+    },
+    "areaServed":"Awka, Anambra State, Nigeria"
+  }
+  </script>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>BShelleng Gold • Gold Dealer in Awka, Anambra</span>
+      <span>Open daily • 7:00 AM – 7:30 PM</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <span class="brand-mark">BG</span>
+        <span>BShelleng Gold<small>Gold • Jewelry • More</small></span>
+      </a>
+      <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul id="navList">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-gold" href="https://wa.me/2348037899770" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="eyebrow">Gold Dealer • Awka, Anambra</div>
+        <h1>Gold you can buy, sell and trade with confidence.</h1>
+        <p>BShelleng Gold specializes in buying and selling gold and quality gold jewelry, serving customers at Eke Awka Market, Awka.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="https://wa.me/2348037899770" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a class="btn btn-outline" href="#contact">Visit Our Shop</a>
+        </div>
+        <div class="trust-row">
+          <div><strong>Gold Buying</strong>Sell your gold</div>
+          <div><strong>Gold Selling</strong>Find quality gold</div>
+          <div><strong>Jewelry</strong>Rings & more</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">What we do</div>
+          <h2>Gold and jewelry services in Awka.</h2>
+          <p>Professional services for customers looking to buy, sell or trade gold and jewelry.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><div class="icon">Au</div><h3>Buy Gold</h3><p>Bring your gold to BShelleng Gold for assessment and a purchase discussion.</p></article>
+          <article class="card"><div class="icon">◆</div><h3>Sell Gold</h3><p>Explore available gold products and jewelry for your personal or business needs.</p></article>
+          <article class="card"><div class="icon">◇</div><h3>Gold Jewelry</h3><p>Quality gold jewelry for everyday wear, gifts and special occasions.</p></article>
+          <article class="card"><div class="icon">⌚</div><h3>Watches</h3><p>Selected watches and accessories for customers looking for a complete look.</p></article>
+          <article class="card"><div class="icon">💍</div><h3>Wedding Rings</h3><p>Wedding and engagement ring options for important moments.</p></article>
+          <article class="card"><div class="icon">₦</div><h3>Gold Trading</h3><p>Talk to us about buying, selling or trading gold at our Awka location.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="about">
+      <div class="container about">
+        <div class="about-box">
+          <div class="big">BG</div>
+          <p style="color:#aaa;margin-top:15px">BShelleng Gold</p>
+          <h2 style="margin-top:5px">Your Awka gold & jewelry destination.</h2>
+        </div>
+        <div class="about-copy">
+          <div class="kicker">About BShelleng Gold</div>
+          <h2>Built around gold, jewelry and customer service.</h2>
+          <p>BShelleng Gold is a gold dealer in Awka, Anambra State, specializing in buying and selling gold and quality gold jewelry.</p>
+          <p>Customers can visit us at Eke Awka Market for gold buying, selling, trading and jewelry services.</p>
+          <ul class="checks">
+            <li>Convenient Awka market location</li>
+            <li>Gold buying and selling</li>
+            <li>Jewelry, watches and wedding rings</li>
+            <li>WhatsApp contact for enquiries</li>
+          </ul>
+          <a class="btn btn-gold" href="https://wa.me/2348037899770" target="_blank" rel="noopener">Contact BShelleng Gold</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Our products</div>
+          <h2>Gold and jewelry for every occasion.</h2>
+          <p>Replace the sample product cards below with your real shop photos when the site is ready.</p>
+        </div>
+        <div class="products">
+          <article class="product"><div class="photo">🪙</div><h3>Gold</h3><p>Gold products and trading.</p></article>
+          <article class="product"><div class="photo">💍</div><h3>Rings</h3><p>Wedding and jewelry rings.</p></article>
+          <article class="product"><div class="photo">⌚</div><h3>Watches</h3><p>Selected watches and accessories.</p></article>
+          <article class="product"><div class="photo">✨</div><h3>Jewelry</h3><p>Quality jewelry pieces.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta">
+          <div>
+            <div class="kicker">Need a quote or enquiry?</div>
+            <h2 style="margin-top:8px">Talk to BShelleng Gold.</h2>
+            <p>Message us on WhatsApp before visiting, or come to our location at Eke Awka Market.</p>
+          </div>
+          <a class="btn btn-gold" href="https://wa.me/2348037899770" target="_blank" rel="noopener">WhatsApp 0803 789 9770</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Contact & location</div>
+          <h2>Come and see us in Awka.</h2>
+          <p>For directions or enquiries, contact BShelleng Gold before your visit.</p>
+        </div>
+        <div class="contact">
+          <div class="contact-card">
+            <h3>BShelleng Gold</h3>
+            <p style="margin:12px 0;color:#666"><strong>Address</strong><br>133 Zik Avenue, Eke Awka Market, Awka, Anambra State, Nigeria.</p>
+            <p style="margin:12px 0;color:#666"><strong>Phone</strong><br><a href="tel:+2348037899770">0803 789 9770</a></p>
+            <p style="margin:12px 0;color:#666"><strong>Hours</strong><br>Monday – Sunday: 7:00 AM – 7:30 PM</p>
+            <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=BShelleng%20Gold%2C%20Eke%20Awka%20Market%2C%20Awka%2C%20Anambra" target="_blank" rel="noopener">Open in Google Maps</a>
+            <div class="map-note">Tip: confirm the exact shop address and map pin before publishing the final version.</div>
+          </div>
+          <div class="contact-card">
+            <h3>Quick WhatsApp</h3>
+            <p style="color:#666;margin:12px 0 22px">Ask about gold buying, gold selling, jewelry, watches or wedding rings.</p>
+            <a class="btn btn-gold" href="https://wa.me/2348037899770?text=Hello%20BShelleng%20Gold%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Start WhatsApp Chat</a>
+            <p class="note">WhatsApp: +234 803 789 9770</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div><strong>BShelleng Gold</strong><br>Gold Dealer • Awka, Anambra</div>
+      <div>© <span id="year"></span> BShelleng Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <a class="float-wa" href="https://wa.me/2348037899770" target="_blank" rel="noopener" aria-label="WhatsApp BShelleng Gold">◉</a>
+
+  <script>
+    function toggleMenu(){
+      document.getElementById('navList').classList.toggle('open');
+    }
+    document.querySelectorAll('#navList a').forEach(a=>{
+      a.addEventListener('click',()=>document.getElementById('navList').classList.remove('open'));
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
